@@ -1,0 +1,62 @@
+body{
+    background: aqua;
+}
+
+p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.circle{
+    border-top:100px solid gray;
+    border-bottom: 100px solid white;
+    border-radius: 50%;
+    width:200px;
+    background-color:black;
+    position: relative;
+    animation:spin 4s linear infinite;
+    margin:50px auto;
+}
+
+@keyframes spin { 
+    100% { 
+        transform:rotate(360deg); transform-origin: 50% 50%; 
+    } 
+}
+
+.circle-left{
+    width: 100px;
+    height: 100px;
+    background:gray;
+    border-radius: 50%;
+    position: absolute;
+    left:0;
+    top:-50px;
+    z-index: 10;
+}
+.circle-left-inside{
+    width:20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    margin: 50px auto;
+}
+.circle-right{
+    width: 100px;
+    height: 100px;
+    background:white;
+    border-radius: 50%;
+    position: absolute;
+    left:100px;
+    top:-50px;
+    z-index: 10;
+}
+.circle-right-inside{
+    width:20px;
+    height: 20px;
+    background: gray;
+    border-radius: 50%;
+    margin: 50px auto;
+}
